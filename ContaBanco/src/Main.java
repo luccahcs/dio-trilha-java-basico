@@ -19,7 +19,13 @@ public class Main {
         System.out.print("Digite o saldo inicial: ");
         Double saldo = scan.nextDouble();
 
+      
         Conta conta = new Conta(numero, agencia, name, saldo);
+
+        System.out.println("\nConta criada com sucesso!");
+
+        System.out.println("Olá " + name + ", obrigado por criar uma conta em nosso banco, sua agência é " 
+            + agencia + ", conta " + numero + " e seu saldo " + String.format("R$ %.2f", saldo) + " já está disponível para saque.");
 
         System.out.println("\nConta criada com sucesso!");
 
